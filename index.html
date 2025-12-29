@@ -1,0 +1,236 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Kenangan kelas 9H</title> 
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        margin: 0;
+        font-family: 'segoe UI',Arial,sans-serif;
+        background: linear-gradient(180deg,#fdfbfb,#ebedee);
+        color: #333;
+    }
+    .hero{
+        background: linear-gradient(135deg,#ff6fb1,#9b5cff);
+        color: white;
+        text-align: center;
+        padding: 60px 20px;
+    }
+    .hero h1{
+        font-size: 48px;
+        margin: 0;
+        letter-spacing: 2px;
+    }
+    .hero p{
+        margin-top: 10px;
+        font-size: 18px;
+        opacity: 0.9;
+    }
+    .foto-kelas{
+        padding: 50px 20px;
+        text-align: center;
+    }
+    .foto-kelas h2{
+        font-size: 28px;
+        margin-bottom: 30px;
+        position: relative;
+        display: inline-block;
+    }
+    .foto-kelas h2::after{
+        content: "";
+        width: 60%;
+        height: 4px;
+        background: #ff6fb1;
+        display: block;
+        margin: 10px auto 0;
+        border-radius: 2px;
+    }
+    .foto-kelas img{
+        width: 100%;
+        max-width: 650px;
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 0 20px 40px;
+        transition: transform 0.3s ease, box-shadow 0,3s ease;
+    }
+    .foto-kelas img:hover{
+        transform: scale(1.03);
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+    }
+    @media (max-width: 600px){
+        .hero h1{
+            font-size:  36px;
+        }
+        .foto-kelas h2{
+            font-size: 24px;
+        }
+    }
+    .footer{
+        background: linear-gradient(135deg,#ff6fb1,#9b5cff);
+        color: white;
+        text-align: center;
+        padding: 50px 20px 40px;
+    }
+    .footer .quote{
+        font-size: 18px;
+        font-style: italic;
+        max-width: 700px;
+        margin: 0 auto 25px;
+        line-height: 1.6;
+        opacity: 0.95;
+    }
+    .footer-sosmed a {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 22px;
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.2);
+        transition: transform 0.3s, background 0.3s;
+    }
+    .footer-sosmed a:hover {
+        transform: translateY(-5px) scale(1.1);
+        background: rgba(255, 255, 255, 0.35);
+    }
+    .footer .copyright{
+        font-size: 13px;
+        opacity: 0.9;
+    }
+    @media (max-width: 600px){
+        .footer .quote {
+            font: 16px;
+        }
+    }
+    .kenangan{
+        padding: 60px 20px;
+        text-align: center;
+    }
+    .kenangan-title{
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 40px;
+        position: relative;
+        display: inline-block;
+    }
+    .kenangan-title::after{
+        content: "";
+        width: 60%;
+        height: 4px;
+        background: linear-gradient(135deg,#ff6fb1,#9b5cff);
+        display: block;
+        margin: 12px auto 0;
+        border-radius: 2px;
+    }
+    .kenangan-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        max-width: 1000px;
+        margin: auto;
+    }
+    .kenangan-card{
+        background: #fff;
+        border-radius: 20px;
+        padding: 16px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        transition:transform 0.3s ease;
+        max-width: 300px;
+        height: 420px;
+    }
+    .kenangan-card:hover{
+        transform: translateY(-8px);
+    }
+    .kenangan-card img{
+        width: 100%;
+        height: 100%;
+        border-radius: 14px;
+        object-fit: cover;
+    }
+    .kenangan-text{
+        margin-top: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #444;
+    }
+    @media (max-width:768px) {
+        .kenangan-grid{
+            grid-template-columns: repeat(2,1fr);
+        }
+    } 
+    @media (max-width:480px) {
+        .kenangan-grid{
+            grid-template-columns: repeat 1fr;
+        }
+        .kenangan-card{
+            height: 300px;
+        }
+    }
+</style> 
+<body>
+    <header class="hero">
+        <h1>ENHYPE (9H)</h1>
+        <p>Angkatan 2023-2026</p>
+    </header>
+    <section class="foto-kelas" >
+        <h2>Foto Kelas</h2>
+        <img src="images/foto-kelas.jpg" alt="Foto Kelas 9H"
+        style="width: 100%;max-width: 500px;display: block;margin: auto;">
+    </section>
+    <section class="kenangan">
+        <h3 class="kenangan-title">Perjalanan 3 Tahun</h3>
+
+        <div class="kenangan-grid">
+            <div class="kenangan-card">
+                <img src="images/foto-kelas7.jpg" alt="kelas 7"
+                class="kenangan-img">
+                <p class="kenangan-text">kelas 7</p>
+        </div>
+
+        <div class="kenangan-card">
+            <img src="images/foto-kelas8.jpg" alt="kelas 8"
+            class="kenangan-img">
+            <p class="kenangan-text">Kelas 8</p>
+         </div>
+
+         <div class="kenangan-card">
+            <img src="images/foto-kelas9.jpg" alt="Kelas 9"
+            class="kenangan-img"
+            <p class="kenangan-text">Kelas 9</p>
+         </div>    
+    </section>
+    <footer class="footer">
+        <p class="quote">
+            "Kelas ini mungkin berakhir tapi tidak dengan kenangannya"
+        </p>
+
+        <div class="footer-sosmed">
+            <a
+            href="https://www.instagram.com/enhypesoneta?igsh=NjNvYXZwc2k0YWxy"
+            target="_blank" class="ig">
+            <i class="fab fa-instagram"></i>
+            </a>
+
+            <a
+            href="https://www.tiktok.com/@enhypesoneta?_r=1&_t=ZS-92ZQ70gqs21"
+            target="_blank"  class="tt">
+            <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </footer>
+    <p class="copyright">
+        @ 2026 Kelas 9H Angkatan 2023-2026
+    </p>
+</body>
+ 
